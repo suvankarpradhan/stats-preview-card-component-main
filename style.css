@@ -33,8 +33,8 @@ body{
 .card-header{
     color: hsl(0, 0%, 100%);
     font-family: 'Inter', sans-serif;
-font-weight: 700;
-font-size: 36px;
+    font-weight: 700;
+    font-size: 36px;
 }
 .heading{
     color: hsl(277, 64%, 61%);
@@ -76,4 +76,38 @@ font-size: 36px;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+@media(max-width:375px){
+    .container{
+        flex-direction: column-reverse;
+        margin: 20% 5%;
+    }
+    .card-img,.card-detail{
+        flex:100%
+    }
+    .card-img>img{
+        object-fit: cover;
+        height: 230px;
+    }
+.card-header,.card-body{
+    text-align: center;
+}
+.card-header{
+    font-size: 30px;
+    padding-top: 10%;
+}
+.card-body{
+    padding: 5%;
+    line-height: 1.5;
+}
+.card-stats{
+    flex-direction: column;
+    padding-top: 0%;
+}
+.companies,.templates,.queres{
+    justify-content: center;
+    text-align: center;
+    flex: 100%;
+    padding: 5%;
+}
 }
